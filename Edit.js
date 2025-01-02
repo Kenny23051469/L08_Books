@@ -13,7 +13,6 @@ const Edit = ({ navigation, route }) => {
     const indexnum = 0;
     const book = mydata[indexnum].data[index];
 
-    // Set initial state based on the book data
     const [bookTitle, setBookTitle] = useState(book.title);
     const [isbn, setIsbn] = useState(book.isbn);
     const [imageLink, setImageLink] = useState(book.image);
