@@ -20,7 +20,7 @@ const Edit = ({ navigation, route }) => {
     const [copies, setCopies] = useState(book.copies);
 
     const handleSave = () => {
-        const updatedData = [...mydata]; // Copy the original data
+        const updatedData = [...mydata];
         updatedData[indexnum].data[route.params.index] = {
           ...updatedData[indexnum].data[route.params.index],
           title: bookTitle,
